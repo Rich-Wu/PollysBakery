@@ -5,8 +5,6 @@ class Product
     @image = image
     @price = price
     @description = description
-    @type = ''
-    $catalog << self
   end
 end
 
