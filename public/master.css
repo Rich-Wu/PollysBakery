@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Charmonman|Lora');
+
+nav {
+  font-family: 'Charmonman', cursive;
+}
+
+nav a {
+  color: black;
+  font-family: 'Charmonman', cursive;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+nav a:hover {
+  transition: color .2s;
+  color: #d42a2a;
+}
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 25vh;
+}
+
+nav>ul {
+  width: 40%;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav>a {
+  height: 100%;
+  width: auto;
+  display: inline-block;
+}
+
+nav img {
+  height: 100%;
+  width: auto;
+}
+
+nav li {
+  padding: 0;
+  display: inline-block;
+}
+
+footer {
+  background-color: white;
+  font-size: .8em;
+  font-family: 'Lora', serif;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+footer p {
+  margin-bottom: 0;
+  text-align: center;
+}
