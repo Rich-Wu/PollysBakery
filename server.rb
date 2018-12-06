@@ -7,9 +7,9 @@ def price(num)
 end
 
 $catalog = []
-Cookie.new("Chocolate Chip", "", 3.0, "Freshly made every day from our bakery in Red Hook using imported Malagasy Cacao and organic eggs from Henrietta and Millie")
-Cookie.new("Oatmeal Raisin", "", 1.5, "We dry our own French grapes each season and source organic Oats from Wisconsin from Ethel and Mary Wilcox")
-Cookie.new("Peanut Butter Banana Bran", "", 2.5, "Roasted and ground daily, the peanuts we use are hand-sorted and the bananas we use are from Whole Foods")
+Cookie.new("Chocolate Chip", "assets/chocolatechip.jpg", 3.0, "Freshly made every day from our bakery in Red Hook using imported Malagasy Cacao and organic eggs from Henrietta and Millie")
+Cookie.new("Oatmeal Raisin", "assets/oatmealraisin.jpg", 1.5, "We dry our own French grapes each season and source organic Oats from Wisconsin from Ethel and Mary Wilcox")
+Cookie.new("Peanut Butter Banana Bran", "assets/peanutbutter.jpg", 2.5, "Roasted and ground daily, the peanuts we use are hand-sorted and the bananas we use are from Whole Foods")
 Cake.new("Boston Creme Pie", "", 15.5, "Our Boston Creme cake is sweetened using only honey harvested from African Killer Bees and shipped to us bi-weekly")
 Cake.new("Tiramisu", "", 20.0, "Our Tiramisu is made from an ancient recipe which calls for the use of Sailor Jerry's spiced rum")
 Cake.new("Napoleon", "", 30.0, "We source this Napoleon cake directly from Il Toscano in Little Neck. We cannot make a better Napoleon. We've tried.")
