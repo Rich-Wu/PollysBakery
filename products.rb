@@ -14,6 +14,7 @@ class Cookie < Product
   def initialize(name,image,price,description)
     super(name,image,price,description)
     @type = 'Cookie'
+    $catalog << self
   end
 end
 
@@ -22,6 +23,7 @@ class Cake < Product
   def initialize(name,image,price,description)
     super(name,image,price,description)
     @type = 'Cake'
+    $catalog << self
   end
 end
 
@@ -30,5 +32,6 @@ class Muffin < Product
   def initialize(name,image,price,description)
     super(name,image,price,description)
     @type = 'Muffin'
+    $catalog << self
   end
 end

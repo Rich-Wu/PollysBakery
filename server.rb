@@ -2,6 +2,9 @@ load 'send.rb'
 load 'products.rb'
 require 'sinatra'
 
+$catalog = []
+
+
 get '/' do
   erb :landing
 end
