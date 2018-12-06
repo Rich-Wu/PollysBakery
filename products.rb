@@ -6,6 +6,7 @@ class Product
     @price = price
     @description = description
     @type = ''
+    $catalog << self
   end
 end
 
