@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Charmonman|Lora');
+@import url('https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Lobster|Lora|Pacifico|Mitr');
 
 .image {
   background-image: url('assets/logo.png');
@@ -65,6 +65,7 @@ footer {
   width: 100%;
   position: relative;
   bottom: 0;
+  padding: 1.2em 0;
 }
 
 footer p {
@@ -75,11 +76,14 @@ footer p {
 .header {
   margin-top: .5em;
   margin-bottom: 1em;
+  font-family: "Lora", serif;
+  font-weight: 500;
 }
 
 .productdisplay {
   margin-top: 1.5em;
   min-height: 40vh;
+  font-family: 'Lora', serif;
 }
 
 .centertext {
