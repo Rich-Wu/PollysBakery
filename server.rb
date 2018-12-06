@@ -1,4 +1,5 @@
 load 'send.rb'
+load 'products.rb'
 require 'sinatra'
 
 get '/' do
