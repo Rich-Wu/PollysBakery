@@ -72,4 +72,16 @@ footer p {
   text-align: center;
 }
 
-.product {}
+.header {
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+
+.productdisplay {
+  margin-top: 1.5em;
+  min-height: 40vh;
+}
+
+.centertext {
+  text-align: center;
+}

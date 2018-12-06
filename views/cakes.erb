@@ -1,9 +1,14 @@
 <% counter = 1 %>
-<div class = "container row">
+<h2 class = 'centertext header'>Cakes</h2>
+<div class = "container row productdisplay">
 <% $catalog.each do |product|%>
   <% if product.type == 'Cake' %>
-  <div class="col-md-4 product">
-    <div class = 'cake-<%= counter %>'>
+  <div class="col-md-4 centertext">
+    <div class = '<%= product.type %>-<%= counter %>'>
+      <img src='<%= product.image %>' alt='<%= product.name %>'/>
+      <h4><%= product.name %></h4>
+      <p><%= product.description %></p>
+      <h6>$ <%= price(product.price) %></h6>
     </div>
   </div>
   <% counter += 1 %>
