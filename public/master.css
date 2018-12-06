@@ -9,7 +9,6 @@
 
 .row {
   width: 100%;
-  margin: auto;
 }
 
 .nav {
@@ -81,11 +80,17 @@ footer p {
 }
 
 .productdisplay {
-  margin-top: 1.5em;
+  margin: 1.5em auto;
   min-height: 40vh;
   font-family: 'Lora', serif;
 }
 
 .centertext {
   text-align: center;
+}
+
+.productimage {
+  height: 200px;
+  margin-bottom: 1em;
+  background-position: bottom;
 }

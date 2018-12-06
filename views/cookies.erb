@@ -5,7 +5,7 @@
   <% if product.type == 'Cookie' %>
   <div class="col-md-4 centertext">
     <div class = '<%= product.type %>-<%= counter %>'>
-      <img src='<%= product.image %>' alt='<%= product.name %>'/>
+      <div style = "background-image: url('<%= product.image %>')"></div>
       <h4><%= product.name %></h4>
       <p><%= product.description %></p>
       <h6>$ <%= price(product.price) %></h6>

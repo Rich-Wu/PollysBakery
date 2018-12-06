@@ -13,9 +13,9 @@ Cookie.new("Peanut Butter Banana Bran", "", 2.5, "Roasted and ground daily, the 
 Cake.new("Boston Creme Pie", "", 15.5, "Our Boston Creme cake is sweetened using only honey harvested from African Killer Bees and shipped to us bi-weekly")
 Cake.new("Tiramisu", "", 20.0, "Our Tiramisu is made from an ancient recipe which calls for the use of Sailor Jerry's spiced rum")
 Cake.new("Napoleon", "", 30.0, "We source this Napoleon cake directly from Il Toscano in Little Neck. We cannot make a better Napoleon. We've tried.")
-Muffin.new("Perfect Blueberry", "", 6.0, "Featuring blueberries picked fresh from the North Fork of Long Island, our blueberry muffins are moist and delectable")
-Muffin.new("Roasted Coffee Cake", "", 6.0, "Somewhere between a cake and a muffin, you'll crave this creation for breakfast, lunch, and dinner")
-Muffin.new("Strawberry Preserve Shortcake Muffin", "", 5.0, "A new take on a classic, this muffin is made using shortcake. The preserves are made with minimal sugar to add balance and acidity")
+Muffin.new("Perfect Blueberry", "assets/blueberry.jpg", 6.0, "Featuring blueberries picked fresh from the North Fork of Long Island, our blueberry muffins are moist and delectable")
+Muffin.new("Roasted Coffee Cake", "assets/coffeecakemuffin.webp", 6.0, "Somewhere between a cake and a muffin, you'll crave this creation for breakfast, lunch, and dinner")
+Muffin.new("Strawberry Preserve Shortcake Muffin", "assets/strawberryshortcake.jpg", 5.0, "A new take on a classic, this muffin is made using shortcake. The preserves are made with minimal sugar to add balance and acidity")
 
 get '/' do
   erb :index
