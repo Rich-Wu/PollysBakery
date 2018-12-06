@@ -9,6 +9,7 @@
 
 .row {
   width: 100%;
+  margin: auto;
 }
 
 .nav {
@@ -70,3 +71,5 @@ footer p {
   margin-bottom: 0;
   text-align: center;
 }
+
+.product {}

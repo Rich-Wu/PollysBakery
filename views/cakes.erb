@@ -1,0 +1,12 @@
+<% counter = 1 %>
+<div class = "container row">
+<% $catalog.each do |product|%>
+  <% if product.type == 'Cake' %>
+  <div class="col-md-4 product">
+    <div class = 'cake-<%= counter %>'>
+    </div>
+  </div>
+  <% counter += 1 %>
+  <% end %>
+<% end %>
+</div>
