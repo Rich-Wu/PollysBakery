@@ -6,6 +6,7 @@ def price(num)
   return '%.2f' % num
 end
 
+$subscribers = []
 $catalog = []
 Cookie.new("Chocolate Chip", "assets/chocolatechip.jpg", 3.0, "Freshly made every day from our bakery in Red Hook using imported Malagasy Cacao and organic eggs from Henrietta and Millie")
 Cookie.new("Oatmeal Raisin", "assets/oatmealraisin.jpg", 1.5, "We dry our own French grapes each season and source organic Oats from Wisconsin from Ethel and Mary Wilcox")
@@ -16,28 +17,43 @@ Cake.new("Napoleon", "assets/napoleon.jpeg", 30.0, "We source this Napoleon cake
 Muffin.new("Perfect Blueberry", "assets/blueberry.jpg", 6.0, "Featuring blueberries picked fresh from the North Fork of Long Island, our blueberry muffins are moist and delectable")
 Muffin.new("Roasted Coffee Cake", "assets/coffeecakemuffin.webp", 6.0, "Somewhere between a cake and a muffin, you'll crave this creation for breakfast, lunch, and dinner")
 Muffin.new("Strawberry Preserve Shortcake Muffin", "assets/strawberryshortcake.jpg", 5.0, "A new take on a classic, this muffin is made using shortcake. The preserves are made with minimal sugar to add balance and acidity")
-puts $catalog
 
 get '/' do
   erb :index
 end
 
 get '/cakes' do
+  if params['email'] != nil && params['email'] != ""
+       $subscribers << params['email']
+       Newsletter.welcome(params['email']).deliver_now
+       puts $subscribers.each
+  end
   erb :cakes
 end
 
+
 get '/cookies' do
+  if params['email'] != nil && params['email'] != ""
+       $subscribers << params['email']
+       Newsletter.welcome(params['email']).deliver_now
+       puts $subscribers.each
+  end
   erb :cookies
 end
 
 get '/muffins' do
+  if params['email'] != nil && params['email'] != ""
+       $subscribers << params['email']
+       Newsletter.welcome(params['email']).deliver_now
+       puts $subscribers.each
+  end
   erb :muffins
 end
 
-get '/email' do
-  erb :'../newsletter/welcome.html'
-end
-
-get '/emailtext' do
-  erb :'../newsletter/welcome.text'
-end
+# get '/email' do
+#   erb :'../newsletter/welcome.html'
+# end
+#
+# get '/emailtext' do
+#   erb :'../newsletter/welcome.text'
+# end

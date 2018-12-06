@@ -1,8 +1,12 @@
 <style media="screen">
   .splashvideo {
+    position: sticky;
     width: 100%;
     height: 80vh;
     overflow: hidden;
+    font-family: 'Lora', serif;
+    color: white;
+    text-shadow: 0 0 25px #611b01;
   }
 
   .video {
@@ -10,9 +14,30 @@
     bottom: 15%;
     width: 100%;
   }
+
+  .splashvideo h2 {
+    position: absolute;
+    font-size: 4em;
+    top: 15%;
+    left: 11%;
+    font-weight: 550;
+    opacity: .8;
+  }
+
+  .splashvideo h4 {
+    position: absolute;
+    font-size: 2.6em;
+    bottom: 20%;
+    right: 8%;
+    opacity: .8;
+  }
 </style>
 <div class = "splashvideo">
   <video class = "video" autoplay muted>
     <source src="assets/cookie.mp4" type="video/mp4">
   </video>
+  <div style = "overflow: hidden;">
+    <h2>Welcome Home</h2>
+    <h4>We made something for you...</h4>
+  </div>
 </div>
