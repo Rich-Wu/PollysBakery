@@ -20,7 +20,7 @@ end
 
 # Newsletter.welcome('richie1988@gmail.com').deliver_now
 
-# You need a fodler whose name matches the name of the class inheriting from
+# You need a folder whose name matches the name of the class inheriting from
 # actionmailer base
 
 # In that folder:

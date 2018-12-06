@@ -16,6 +16,7 @@ Cake.new("Napoleon", "assets/napoleon.jpeg", 30.0, "We source this Napoleon cake
 Muffin.new("Perfect Blueberry", "assets/blueberry.jpg", 6.0, "Featuring blueberries picked fresh from the North Fork of Long Island, our blueberry muffins are moist and delectable")
 Muffin.new("Roasted Coffee Cake", "assets/coffeecakemuffin.webp", 6.0, "Somewhere between a cake and a muffin, you'll crave this creation for breakfast, lunch, and dinner")
 Muffin.new("Strawberry Preserve Shortcake Muffin", "assets/strawberryshortcake.jpg", 5.0, "A new take on a classic, this muffin is made using shortcake. The preserves are made with minimal sugar to add balance and acidity")
+puts $catalog
 
 get '/' do
   erb :index
@@ -31,4 +32,12 @@ end
 
 get '/muffins' do
   erb :muffins
+end
+
+get '/email' do
+  erb :'../newsletter/welcome.html'
+end
+
+get '/emailtext' do
+  erb :'../newsletter/welcome.text'
 end

@@ -1,1 +1,45 @@
-<h1>welcome</h1>
+<h1>Welcome to Polly's Pals!</h1>
+
+<h5>You now have access to our best deals, newest products, and exclusive coupons for when you visit us!</h5>
+
+<h3 style = "text-align: center;">Products</h3>
+<div style = "margin: auto;" class = "row">
+<% counter = 1 %>
+<% $catalog.each do |product|%>
+  <% if product.type == 'Cake' %>
+  <div class="col-12 col-sm-4">
+    <div class = '<%= product.type %>-<%= counter %>'>
+      <div class = "productimage" style = "background-image: url('<%= product.image %>')"></div>
+      <h4><%= product.name %></h4>
+      <p><%= product.description %></p>
+      <h6>$ <%= price(product.price) %></h6>
+    </div>
+  </div>
+  <% counter += 1 %>
+  <% end %>
+  <% counter = 1 %>
+  <% if product.type == 'Cookie' %>
+  <div class="col-12 col-sm-4">
+    <div class = '<%= product.type %>-<%= counter %>'>
+      <div class = "productimage" style = "background-image: url('<%= product.image %>')"></div>
+      <h4><%= product.name %></h4>
+      <p><%= product.description %></p>
+      <h6>$ <%= price(product.price) %></h6>
+    </div>
+  </div>
+  <% counter += 1 %>
+  <% end %>
+  <% counter = 1 %>
+  <% if product.type == 'Muffin' %>
+  <div class="col-12 col-sm-4">
+    <div class = '<%= product.type %>-<%= counter %>'>
+      <div class = "productimage" style = "background-image: url('<%= product.image %>')"></div>
+      <h4><%= product.name %></h4>
+      <p><%= product.description %></p>
+      <h6>$ <%= price(product.price) %></h6>
+    </div>
+  </div>
+  <% counter += 1 %>
+  <% end %>
+<% end %>
+</div>
