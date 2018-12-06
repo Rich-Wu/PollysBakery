@@ -5,23 +5,23 @@ You now have access to our best deals, newest products, and exclusive coupons fo
 Products
 
 <% $catalog.each do |product| %>
-  <% if product.type == 'Cake' %>
-    <%= product.name %>
-    <%= product.description %>
-    <%= price(product.price) %>
-  <% end %>
+<% if product.type == 'Cake' %>
+<%= product.name %>
+<%= product.description %>
+$ <%= price(product.price) %>
 
-  <% if product.type == 'Cookie' %>
-    <%= product.name %>
-    <%= product.description %>
-    <%= price(product.price) %>
-  <% end %>
-
-  <% if product.type == 'Muffin' %>
-    <%= product.name %>
-    <%= product.description %>
-    <%= price(product.price) %>
-  <% end %>
 <% end %>
+<% if product.type == 'Cookie' %>
+<%= product.name %>
+<%= product.description %>
+$ <%= price(product.price) %>
 
+<% end %>
+<% if product.type == 'Muffin' %>
+<%= product.name %>
+<%= product.description %>
+$ <%= price(product.price) %>
+
+<% end %>
+<% end %>
 Be sure to stop by soon!
