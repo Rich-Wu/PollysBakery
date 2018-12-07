@@ -62,13 +62,15 @@
 }
 
 footer {
-  background-color: white;
+  background-color: #39383c;
   font-size: .8em;
   font-family: 'Lora', serif;
   width: 100%;
   position: relative;
   bottom: 0;
   padding: 1.2em 0;
+  color: white;
+  opacity: .93;
 }
 
 footer p {
