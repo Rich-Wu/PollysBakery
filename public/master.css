@@ -123,3 +123,11 @@ form {
   border-color: #cc0000;
   background-color: #de0000;
 }
+
+.sans {
+  font-family: 'lora', serif;
+}
+
+.margin {
+  margin: 1em auto;
+}
