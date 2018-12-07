@@ -23,7 +23,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 25vh;
+  min-height: 25vh;
 }
 
 .nav a {
@@ -97,4 +97,29 @@ footer p {
   height: 200px;
   margin-bottom: 1em;
   background-position: bottom;
+}
+
+.signup {
+  font-family: 'Lora', serif;
+  width: 60%;
+  margin: 2em auto;
+  text-align: center;
+  background-color: #39383c;
+  border-radius: 10px;
+  color: white;
+  opacity: .95;
+}
+
+form {
+  padding: 15px 40px;
+}
+
+.btn-primary {
+  background-color: #f73434;
+  border-color: #f73434;
+}
+
+.btn-primary:hover {
+  border-color: #cc0000;
+  background-color: #de0000;
 }
