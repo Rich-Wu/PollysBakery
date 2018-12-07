@@ -54,11 +54,3 @@ get '/muffins' do
   end
   erb :muffins
 end
-
-get '/email' do
-  erb :'../newsletter/welcome.html'
-end
-
-get '/emailtext' do
-  erb :'../newsletter/welcome.text'
-end
